@@ -1,0 +1,113 @@
+Every Single Password In This File:
+
+	Google Pass
+
+1:microsoftpaiduser@gmail.com
+p:afzalahmad031922
+
+2:afzalkhan78600143@gmail.com
+p:afzalahmad_20
+                      
+3:afzalahmad78600143@gmail.com
+p:afzalahmad_21
+
+4:biggamerplayer66782@gnail.com
+p:bigplayer_23
+
+5:katk64183@gmail.com
+p:bigplayer_24
+
+6:alphanovaacc@gmail.com
+p:alphaNova_22
+
+7:beautifulgirl980132@gmail.com
+p:girl_980123
+
+8:Apple:microsoftpaiduser@gmail.com
+p:Afzaal@0319_0909 
+
+
+	App Login Pass
+
+Instagram:
+1:alphanova_12
+p:insta_786
+
+2:
+p:
+
+Wifi router:
+1:admin01  or admin1
+p:41156209
+
+
+
+Power PLane:
+
+High Performance:
+powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+
+Balanced:
+powercfg -duplicatescheme 381b4222-f694-41f0-9685-ff5bb260df2e
+
+Power saver:
+powercfg -duplicatescheme a1841308-3541-4fab-bc81-f71556f20b4a
+
+Ultimate Performance:
+powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61Every Single Password In This File:
+
+	Google Pass
+
+1:microsoftpaiduser@gmail.com
+p:afzalahmad031922
+
+2:afzalkhan78600143@gmail.com
+p:afzalahmad_20
+                      
+3:afzalahmad78600143@gmail.com
+p:afzalahmad_21
+
+4:biggamerplayer66782@gnail.com
+p:bigplayer_23
+
+5:katk64183@gmail.com
+p:bigplayer_24
+
+6:alphanovaacc@gmail.com
+p:alphaNova_22
+
+7:beautifulgirl980132@gmail.com
+p:girl_980123
+
+8:Apple:microsoftpaiduser@gmail.com
+p:Afzaal@0319_0909 
+
+
+	App Login Pass
+
+Instagram:
+1:alphanova_12
+p:insta_786
+
+2:
+p:
+
+Wifi router:
+1:admin01  or admin1
+p:41156209
+
+
+
+Power PLane:
+
+High Performance:
+powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+
+Balanced:
+powercfg -duplicatescheme 381b4222-f694-41f0-9685-ff5bb260df2e
+
+Power saver:
+powercfg -duplicatescheme a1841308-3541-4fab-bc81-f71556f20b4a
+
+Ultimate Performance:
+powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
