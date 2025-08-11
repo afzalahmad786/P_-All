@@ -1,0 +1,16 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87ceeb; /* Sky blue background */
+}
+
+#gameContainer {
+    width: 800px;
+    height: 600px;
+    border: 2px solid #000;
+}

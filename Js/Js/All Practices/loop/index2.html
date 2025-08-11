@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOP</title>
+</head>
+
+<body>
+    <script> 
+// Prompt the user to enter the starting value
+var start = parseInt(prompt("Enter the starting value for the loop:"));
+
+// Prompt the user to enter the ending value
+var end = parseInt(prompt("Enter the ending value for the loop:"));
+
+// Define the step value as 1
+var step = 1;
+
+// Determine the direction of the loop (increment or decrement)
+var increment = start <= end;
+
+// Dynamic loop based on increment direction
+for (var x = start; increment ? x <= end : x >= end; increment ? x += step : x -= step) {
+  console.log("Dynamic Loop: " + x);
+}
+    </script>
+</body>
+
+</html>

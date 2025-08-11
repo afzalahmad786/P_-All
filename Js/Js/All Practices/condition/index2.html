@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="output">Check the result below:</p>
+
+    <script>
+        let u_name = prompt("Enter your username:");
+        let password = prompt("Enter your password:");
+        let roll = prompt("Enter your roll number:");
+
+        // Convert roll to a number
+        roll = parseInt(roll, 10);
+
+        let message = "Login successful.";
+        let loginSuccessful = true;
+
+        if(u_name!="Ali" && password!="12345" && roll!="100"){
+            document.write("invalid username OR password OR roll");
+        }
+        else if (u_name !== "Ali") {
+            message = "Username is incorrect.";
+            loginSuccessful = false;
+        } else if (password !== "12345") {
+            message = "Password is incorrect.";
+            loginSuccessful = false;
+        } else if (roll !== 100) {
+            message = "Roll number is incorrect.";
+            loginSuccessful = false;
+        }
+
+
+        document.getElementById("output").innerText = message;
+
+        if (loginSuccessful) {
+            let a = parseFloat(prompt("Enter 1st value:"));
+            let operator = prompt("Enter operator (+, -, *, /):");
+            let b = parseFloat(prompt("Enter 2nd value:"));
+
+            let result;
+
+            if (operator === "+") {
+                result = a + b;
+            } else if (operator === "-") {
+                result = a - b;
+            } else if (operator === "*") {
+                result = a * b;
+            } else if (operator === "/") {
+                result = a / b;
+            } else {
+                result = "Invalid operator.";
+            }
+
+            let resultMessage = `
+                Login successful.
+                Result of ${a} ${operator} ${b} = ${result}
+            `;
+
+            document.getElementById("output").innerText = resultMessage;
+        }
+    </script>
+</body>
+</html>

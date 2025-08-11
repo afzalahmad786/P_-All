@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Example</title>
+</head>
+<body>
+    <script>
+        var menu1 = prompt("1:Account\n2: Balance\n3: Security");
+
+        switch (menu1) {
+            case '1':
+                var accountOption = prompt("1: Account Balance\n2: Send Money");
+
+                switch (accountOption) {
+                    case '1':
+                        var accountBalance = prompt("Enter your account number:");
+                        alert("Your account balance is: " + accountBalance);
+                        break;
+                    case '2':
+                        var sendMoney = prompt("Enter the amount to send:");
+                        alert("You have chosen to send: " + sendMoney);
+                        break;
+                    default:
+                        alert("Invalid choice");
+                        break;
+                }
+                break;
+
+            case '2':
+                var balanceOption = prompt("Select your network:\n1: Zong\n2: Telenor\n3: Jazz\n4: Warid");
+
+                switch (balanceOption) {
+                    case '1':
+                        var zongBalance = prompt("Enter your Zong number:");
+                        alert("Your Zong number is: " + zongBalance);
+                        var zongAmount = prompt("Enter the amount to send:");
+                        alert("You chose to send " + zongAmount + " from your Zong account.");
+                        break;
+                    case '2':
+                        var telenorBalance = prompt("Enter your Telenor number:");
+                        alert("Your Telenor number is: " + telenorBalance);
+                        var telenorAmount = prompt("Enter the amount to send:");
+                        alert("You chose to send " + telenorAmount + " from your Telenor account.");
+                        break;
+                    case '3':
+                        var jazzBalance = prompt("Enter your Jazz number:");
+                        alert("Your Jazz number is: " + jazzBalance);
+                        var jazzAmount = prompt("Enter the amount to send:");
+                        alert("You chose to send " + jazzAmount + " from your Jazz account.");
+                        break;
+                    case '4':
+                        var waridBalance = prompt("Enter your Warid number:");
+                        alert("Your Warid number is: " + waridBalance);
+                        var waridAmount = prompt("Enter the amount to send:");
+                        alert("You chose to send " + waridAmount + " from your Warid account.");
+                        break;
+                    default:
+                        alert("Invalid choice");
+                        break;
+                }
+                break;
+
+            case '3':
+                var securityOption = prompt("1: Reset Account PIN\n2: Help Center");
+
+                switch (securityOption) {
+                    case '1':
+                        var resetPin = prompt("Enter your new PIN:");
+                        alert("Your PIN has been reset to: " + resetPin);
+                        break;
+                    case '2':
+                        alert("You have chosen Help Center. Please contact support for assistance.");
+                        break;
+                    default:
+                        alert("Invalid choice");
+                        break;
+                }
+                break;
+
+            default:
+                alert("Invalid choice");
+                break;
+        }
+    </script>
+</body>
+</html>
