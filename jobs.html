@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Browse Jobs</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="index.html" class="logo">Career<span>Exploration</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section__container">
+        <h2 class="section__header">Available <span>Job Positions</span></h2>
+        
+        <!-- Updated Search and Filter Section -->
+        <div class="search__filter__container">
+            <div class="search__box">
+                <i class="ri-search-line"></i>
+                <input type="text" id="searchInput" placeholder="Search jobs by title, company or location...">
+            </div>
+            
+            <div class="filter__container">
+                <div class="filter__box">
+                    <select id="categoryFilter">
+                        <option value="">All Categories</option>
+                        <option value="tech">Technology</option>
+                        <option value="design">Design</option>
+                        <option value="management">Management</option>
+                        <option value="marketing">Marketing</option>
+                    </select>
+                    
+                    <select id="locationFilter">
+                        <option value="">All Locations</option>
+                        <option value="USA">USA</option>
+                        <option value="Germany">Germany</option>
+                        <option value="UK">UK</option>
+                    </select>
+                    
+                    <select id="salaryFilter">
+                        <option value="">All Salary Ranges</option>
+                        <option value="0-50000">$0 - $50,000</option>
+                        <option value="50000-100000">$50,000 - $100,000</option>
+                        <option value="100000+">$100,000+</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loadingState" class="loading__state">
+            <div class="loader"></div>
+            <p>Finding the best jobs for you...</p>
+        </div>
+
+        <!-- No Results Message -->
+        <div id="noResults" class="no__results hidden">
+            <img src="assets/no-results.png" alt="No results found">
+            <h3>No jobs found</h3>
+            <p>Try adjusting your search criteria</p>
+        </div>
+
+        <div class="jobs__list" id="jobsList">
+            <!-- Jobs will be populated here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="jobs.js"></script>
+</body>
+</html>

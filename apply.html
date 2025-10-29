@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Apply for Job</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="index.html" class="logo">Career<span>Exploration</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section__container">
+        <h2 class="section__header">Apply for <span id="jobTitle">Position</span></h2>
+        <div class="application__form">
+            <form id="applicationForm" onsubmit="return submitApplication(event)">
+                <input type="hidden" id="jobId" name="jobId">
+                <div class="form__group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form__group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form__group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form__group">
+                    <label for="experience">Years of Experience</label>
+                    <input type="number" id="experience" name="experience" required>
+                </div>
+                <div class="form__group">
+                    <label for="resume">Upload Resume (PDF)</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf" required>
+                </div>
+                <div class="form__group">
+                    <label for="coverLetter">Cover Letter</label>
+                    <textarea id="coverLetter" name="coverLetter" rows="5" required></textarea>
+                </div>
+                <div class="form__group">
+                    <label for="portfolio">Portfolio URL (Optional)</label>
+                    <input type="url" id="portfolio" name="portfolio">
+                </div>
+                <div class="form__group">
+                    <label for="linkedin">LinkedIn Profile (Optional)</label>
+                    <input type="url" id="linkedin" name="linkedin">
+                </div>
+                <div class="form__group">
+                    <label for="salary">Expected Salary</label>
+                    <input type="number" id="salary" name="salary" required>
+                </div>
+                <div class="form__group">
+                    <label for="start_date">Available Start Date</label>
+                    <input type="date" id="start_date" name="start_date" required>
+                </div>
+                <div class="form__group">
+                    <label>
+                        <input type="checkbox" required>
+                        I agree to the terms and conditions and privacy policy
+                    </label>
+                </div>
+                <div class="form__progress">
+                    <div class="progress__step active">Personal Info</div>
+                    <div class="progress__step">Experience</div>
+                    <div class="progress__step">Documents</div>
+                </div>
+                <div class="form__buttons">
+                    <button type="button" class="btn btn__secondary" onclick="prevStep()">Previous</button>
+                    <button type="button" class="btn" onclick="nextStep()">Next</button>
+                    <button type="submit" class="btn">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="apply.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Light Theme (Default) */
+:root[data-theme="light"] {
+    --primary-color: #10319e;
+    --primary-color-dark: #3a51d4;
+    --text-dark: #262626;
+    --text-light: #737373;
+    --extra-light: #e5e5e5;
+    --white: #ffffff;
+    --background: #ffffff;
+    --background-secondary: #f8f9fa;
+    --border-color: #e5e5e5;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme */
+:root[data-theme="dark"] {
+    --primary-color: #4a6cf7;
+    --primary-color-dark: #3a51d4;
+    --text-dark: #ffffff;
+    --text-light: #a3a3a3;
+    --extra-light: #2d2d2d;
+    --white: #1a1a1a;
+    --background: #121212;
+    --background-secondary: #1e1e1e;
+    --border-color: #2d2d2d;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Theme Transition */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Enhanced Theme Transitions */
+body {
+    transition: background-color 0.5s ease;
+}
+
+/* Theme Switcher Button */
+.theme__switcher {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.theme__switcher:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px var(--shadow-color);
+}
+
+/* Better Theme Switcher Animation */
+.theme__switcher i {
+    transition: transform 0.5s ease;
+}
+
+.theme__switcher:hover i {
+    transform: rotate(180deg);
+}
+
+/* Dark Theme Specific Styles */
+[data-theme="dark"] .job__card,
+[data-theme="dark"] .steps__card,
+[data-theme="dark"] .explore__card,
+[data-theme="dark"] .contact__card,
+[data-theme="dark"] .application__form,
+[data-theme="dark"] .auth__box {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .nav__header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .nav__links {
+    background-color: var(--white);
+}
+
+[data-theme="dark"] .job__card:hover,
+[data-theme="dark"] .explore__card:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .job__card img,
+[data-theme="dark"] .explore__card img {
+    background-color: var(--background-secondary);
+}
+
+[data-theme="dark"] body {
+    background-color: var(--background);
+}
+
+[data-theme="dark"] .input__group {
+    background-color: var(--background);
+}
+
+[data-theme="dark"] .toast {
+    background-color: var(--white);
+}
+
+/* Enhanced Focus States for Dark Theme */
+[data-theme="dark"] input:focus,
+[data-theme="dark"] textarea:focus {
+    box-shadow: 0 0 0 2px var(--primary-color);
+}

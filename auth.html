@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth.css">
+    <title>Login / Register - Career Exploration</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="index.html" class="logo">Career<span>Exploration</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="auth__container">
+        <div class="auth__box">
+            <div class="auth__forms">
+                <!-- Login Form -->
+                <form id="loginForm" class="form login__form active" onsubmit="return handleLogin(event)">
+                    <h2>Welcome Back</h2>
+                    <p>Please login to your account</p>
+                    
+                    <div class="form__group">
+                        <div class="input__group">
+                            <i class="ri-mail-line"></i>
+                            <input type="email" name="email" required placeholder="Email">
+                        </div>
+                    </div>
+                    
+                    <div class="form__group">
+                        <div class="input__group">
+                            <i class="ri-lock-line"></i>
+                            <input type="password" name="password" required placeholder="Password">
+                            <i class="ri-eye-line password-toggle"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form__group remember__forgot">
+                        <label>
+                            <input type="checkbox" name="remember">
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot__link">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn">Login</button>
+                    
+                    <div class="social__login">
+                        <p>Or login with</p>
+                        <div class="social__buttons">
+                            <button type="button" class="social__btn google">
+                                <i class="ri-google-fill"></i>
+                                Google
+                            </button>
+                            <button type="button" class="social__btn linkedin">
+                                <i class="ri-linkedin-fill"></i>
+                                LinkedIn
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <p class="switch__form">
+                        Don't have an account? 
+                        <a href="#" onclick="switchForm('register')">Register</a>
+                    </p>
+                </form>
+
+                <!-- Register Form -->
+                <form id="registerForm" class="form register__form" onsubmit="return handleRegister(event)">
+                    <h2>Create Account</h2>
+                    <p>Please fill in your details</p>
+                    
+                    <div class="form__group">
+                        <div class="input__group">
+                            <i class="ri-user-line"></i>
+                            <input type="text" name="fullName" required placeholder="Full Name">
+                        </div>
+                    </div>
+                    
+                    <div class="form__group">
+                        <div class="input__group">
+                            <i class="ri-mail-line"></i>
+                            <input type="email" name="email" required placeholder="Email">
+                        </div>
+                    </div>
+                    
+                    <div class="form__group">
+                        <div class="input__group">
+                            <i class="ri-lock-line"></i>
+                            <input type="password" name="password" required placeholder="Password">
+                            <i class="ri-eye-line password-toggle"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form__group">
+                        <div class="input__group">
+                            <i class="ri-lock-line"></i>
+                            <input type="password" name="confirmPassword" required placeholder="Confirm Password">
+                            <i class="ri-eye-line password-toggle"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form__group terms">
+                        <label>
+                            <input type="checkbox" name="terms" required>
+                            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Register</button>
+                    
+                    <p class="switch__form">
+                        Already have an account? 
+                        <a href="#" onclick="switchForm('login')">Login</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast for notifications -->
+    <div id="toast" class="toast">
+        <div class="toast__content">
+            <i class="ri-checkbox-circle-fill"></i>
+            <div class="toast__message">
+                <span class="toast__text">Success!</span>
+                <span class="toast__description"></span>
+            </div>
+            <i class="ri-close-line toast__close" onclick="closeToast()"></i>
+        </div>
+        <div class="toast__progress"></div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
